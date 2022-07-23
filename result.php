@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php
-		$your_choice = $_POST['hand'].'<br>';
+		$your_choice = $_POST['hand'];
 		
 		$pc_hand = ["グー", "チョキ", "パー"];
 		
@@ -18,20 +18,12 @@
 
 		if ($your_choice == $rand_choice) {
 			$result ='あいこ';
-			var_dump($your_choice);
-			var_dump($rand_choice);
 		} elseif ($your_choice == 'グー' && $rand_choice == 'チョキ') {
 				$result = '勝ち';
-				var_dump($your_choice);
-				var_dump($rand_choice);
 		} elseif ($your_choice == 'チョキ' && $rand_choice == 'パー') {
 				$result = '勝ち';
-				var_dump($your_choice);
-				var_dump($rand_choice);
 		} elseif ($your_choice == 'パー' && $rand_choice == 'グー') {
 				$result = '勝ち';
-				var_dump($your_choice);
-				var_dump($rand_choice);
 		} else {
 				$result = '負け';
 		}
